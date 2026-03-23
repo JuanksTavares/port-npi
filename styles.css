@@ -1,0 +1,106 @@
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --text: #c9d1d9;
+  --title: #58a6ff;
+  --accent: #3fb950;
+  --border: #30363d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Fira Code", "Cascadia Code", monospace;
+  background: var(--bg);
+  color: var(--text);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.terminal-window {
+  width: min(900px, 100%);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  background: #1f2937;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red {
+  background: #ff5f56;
+}
+
+.yellow {
+  background: #ffbd2e;
+}
+
+.green {
+  background: #27c93f;
+}
+
+.terminal-title {
+  margin: 0 0 0 8px;
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+.terminal-body {
+  padding: 24px;
+}
+
+.prompt {
+  color: var(--accent);
+}
+
+.line {
+  margin: 0 0 12px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  color: var(--title);
+  font-size: 2rem;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+
+.terminal-nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.terminal-nav a {
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.terminal-nav a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
