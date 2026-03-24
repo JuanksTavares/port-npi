@@ -81,9 +81,52 @@ h1 {
   font-size: 2rem;
 }
 
+h2 {
+  margin: 0 0 16px;
+  color: var(--title);
+  font-size: 1rem;
+}
+
+h3 {
+  margin: 0 0 16px;
+  color: var(--title);
+  font-size: 1.5rem;
+}
+
 p {
   margin: 0 0 20px;
   line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 24px;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.social-links svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .terminal-nav {
