@@ -63,6 +63,13 @@ body {
   color: #8b949e;
 }
 
+.terminal-logo {
+  margin-left: auto;
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+
 .terminal-body {
   padding: 24px;
 }
@@ -96,6 +103,27 @@ h3 {
 p {
   margin: 0 0 20px;
   line-height: 1.6;
+}
+
+.about-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  width: 220px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 260px;
 }
 
 .social-links {
