@@ -65,8 +65,9 @@ body {
 
 .terminal-logo {
   margin-left: auto;
-  height: 28px;
+  height: 18px;
   width: auto;
+  max-width: 50px;
   object-fit: contain;
 }
 
