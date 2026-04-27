@@ -3,47 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | TCC</title>
+  <title>TCC - Segurança em LLMs - Juan Tavares</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/jpeg" href="img/pngegg.png" />
 </head>
 <body>
   <main class="terminal-window">
     <header class="terminal-header">
+      <div class="header-left">
         <span class="dot red"></span>
         <span class="dot yellow"></span>
         <span class="dot green"></span>
-        <p class="terminal-title">portifolio@terminal: ~/Atividades/TCC.html</p>
+        <p class="terminal-title">portifolio@terminal: ~/atividades/tcc</p>
+      </div>
       <img class="terminal-logo" src="img/logo-unifil.svg" alt="Logo da UNIFIL" />
     </header>
 
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link" data-page="home">Home</a>
+      <a href="sobremim.html" class="nav-link" data-page="about">Sobre mim</a>
+      <a href="Atividades.html" class="nav-link" data-page="activities">Atividades</a>
+    </nav>
+
     <section class="terminal-body">
-        <p class="line"><span class="prompt">JuanTavares@portifolio:~$</span> open TCC.md</p>
-        <h1>Trabalho de Conclusão de Curso (TCC)</h1>
-        <h3>Segurança no Código Gerado por Modelos de Linguagem: Uma Revisão Bibliográfica de Vulnerabilidades e Abordagens de Defesa</h3>
+      <div class="command-line">
+        <p class="line"><span class="prompt">JuanTavares@portifolio:~$</span> <span class="command">cat tcc.md</span></p>
+      </div>
 
-        <p>Resumo</p>
+      <h1>Trabalho de Conclusão de Curso (TCC)</h1>
+      <h2 style="font-size: 1.3rem; color: var(--info); font-weight: 500; margin-top: 16px;">Segurança no Código Gerado por Modelos de Linguagem: Uma Revisão Bibliográfica de Vulnerabilidades e Abordagens de Defesa</h2>
 
-        <p>Os Grandes Modelos de Linguagem (LLMs), sistemas de inteligência artificial treinados em vastos conjuntos de dados, tornaram-se ferramentas transformadoras na geração de código-fonte a partir de linguagem natural. 
-        No entanto, os LLMs geram código com vulnerabilidades devido ao treinamento em dados públicos. Este estudo adotou uma Revisão Bibliográfica da Literatura, conduzida na base de dados Google Scholar, para mapear evidências recentes (a partir de 2023) sobre tais vulnerabilidades de segurança em código gerado por LLMs, focando em Grandes Modelos de Linguagem. 
-        Dos 42 artigos identificados inicialmente, 18 atenderam aos critérios de seleção e foram submetidos à análise detalhada. Esta revisão bibliográfica identifica as falhas de segurança mais comuns e analisa estratégias de mitigação com base em literatura recente. 
-        Os resultados apontam que vulnerabilidades como injeção de SQL são recorrentes, e que abordagens como fine-tuning especializado e verificações de código estático são eficazes. Conclui-se que a adoção de mecanismos de verificação contribui decisivamente para um uso confiável de LLMs na geração de código.
-        </p>
-        <p>Palavras-chave: llms; segurança de código; vulnerabilidades; inteligência artificial.</p>
+      <div style="background: rgba(88, 166, 255, 0.05); border-left: 3px solid var(--title); padding: 20px; border-radius: 6px; margin: 24px 0;">
+        <p style="margin: 0;"><strong>Autores:</strong> Juan Tavares | <strong>Período:</strong> 8º Semestre</p>
+      </div>
 
-        <nav class="terminal-nav">
-            <a href="https://docs.google.com/document/d/1auOmAbTIxzvLxbfvRkY4mWBFz7TAduzYStpssFRHOZU/edit?usp=sharing">Artigo Completo</a>
-        </nav>
+      <h2>Resumo Executivo</h2>
+      <p>
+        Os Grandes Modelos de Linguagem (LLMs), sistemas de inteligência artificial treinados em vastos conjuntos de dados, tornaram-se ferramentas transformadoras na geração de código-fonte a partir de linguagem natural. No entanto, esses modelos geram código com vulnerabilidades devido ao treinamento em dados públicos que frequentemente contêm padrões inseguros.
+      </p>
+      <p>
+        Este estudo adotou uma <strong>Revisão Bibliográfica da Literatura</strong>, conduzida na base de dados Google Scholar, para mapear evidências recentes (a partir de 2023) sobre vulnerabilidades de segurança em código gerado por LLMs. Dos 42 artigos identificados inicialmente, 18 atenderam aos critérios de seleção e foram submetidos à análise detalhada.
+      </p>
 
-        <p></p>
+      <h2>Principais Descobertas</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Vulnerabilidades Identificadas</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li>🔴 Injeção de SQL</li>
+            <li>🟡 Injeção de Comando</li>
+            <li>🟡 Gestão de Memória</li>
+            <li>🔴 Cross-Site Scripting (XSS)</li>
+            <li>🟡 Desserialização Insegura</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Estratégias de Mitigação</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li>✓ Fine-tuning Especializado</li>
+            <li>✓ Verificações de Código Estático</li>
+            <li>✓ Análise Dinâmica</li>
+            <li>✓ Testes de Segurança</li>
+            <li>✓ Revisão de Código Humana</li>
+          </ul>
+        </div>
+      </div>
 
-      <nav class="terminal-nav">
-        <a href="index.html">Home</a>
-        <a href="sobremim.html">Sobre mim</a>
-        <a href="Atividades.html">Atividades</a>
-      
-      </nav>  
+      <h2>Contribuições da Pesquisa</h2>
+      <ul style="list-style: none; padding: 0; margin: 20px 0;">
+        <li style="padding: 12px 0; padding-left: 24px; position: relative;">
+          <strong>Mapeamento Sistemático:</strong> Identificação das falhas de segurança mais comuns em LLMs
+        </li>
+        <li style="padding: 12px 0; padding-left: 24px; position: relative;">
+          <strong>Análise Comparativa:</strong> Avaliação de diferentes abordagens de mitigação
+        </li>
+        <li style="padding: 12px 0; padding-left: 24px; position: relative;">
+          <strong>Recomendações Práticas:</strong> Diretrizes para desenvolvedores usando LLMs
+        </li>
+        <li style="padding: 12px 0; padding-left: 24px; position: relative;">
+          <strong>Roadmap de Pesquisa:</strong> Identificação de lacunas e oportunidades futuras
+        </li>
+      </ul>
+
+      <h2>Conclusões</h2>
+      <p>
+        A pesquisa conclui que <strong>a adoção de mecanismos de verificação contribui decisivamente para um uso confiável de LLMs na geração de código</strong>. As vulnerabilidades não são inerentes aos LLMs, mas resultam de uma falta de processos de garantia de qualidade robustos. A combinação de fine-tuning especializado, análise automática e revisão humana fornece uma defesa em profundidade eficaz.
+      </p>
+
+      <h2>Implicações</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Para Pesquisadores</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Segurança IA</span>
+            <span class="skill-tag">LLMs</span>
+            <span class="skill-tag">Revisão Bib.</span>
+            <span class="skill-tag">Vulnerabilities</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Para Desenvolvedores</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Code Review</span>
+            <span class="skill-tag">Testing</span>
+            <span class="skill-tag">Static Analysis</span>
+            <span class="skill-tag">Best Practices</span>
+          </div>
+        </div>
+      </div>
+
+      <h2>Palavras-chave</h2>
+      <div class="skill-tags" style="margin-top: 12px;">
+        <span class="skill-tag">LLMs</span>
+        <span class="skill-tag">Segurança de Código</span>
+        <span class="skill-tag">Vulnerabilidades</span>
+        <span class="skill-tag">Inteligência Artificial</span>
+        <span class="skill-tag">Revisão Bibliográfica</span>
+        <span class="skill-tag">Code Generation</span>
+      </div>
+
+      <div style="background: rgba(63, 185, 80, 0.1); border: 1px solid var(--accent); padding: 20px; border-radius: 8px; margin: 32px 0; text-align: center;">
+        <p style="margin: 0 0 12px;"><strong>Documentação Completa Disponível</strong></p>
+        <a href="https://docs.google.com/document/d/1auOmAbTIxzvLxbfvRkY4mWBFz7TAduzYStpssFRHOZU/edit?usp=sharing" target="_blank" class="cta-button" style="display: inline-block; margin-top: 12px;">📄 Leia o Artigo Completo</a>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border);">
+        <a href="Atividades.html" class="cta-button" style="display: inline-block;">← Voltar para Atividades</a>
+      </div>
+
+      <footer class="terminal-footer">
+        <p>@ 2024-2026 Juan Tavares.</p>
+      </footer>
     </section>
   </main>
+
+  <script>
+    document.querySelectorAll('[data-page]').forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === 'Atividades.html' || window.location.pathname.includes('Atividades')) {
+        link.classList.add('active');
+      }
+    });
+  </script>
 </body>
 </html>

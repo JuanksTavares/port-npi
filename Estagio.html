@@ -3,46 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio </title>
+  <title>Estágio Supervisionado - Juan Tavares</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/jpeg" href="img/pngegg.png" />
 </head>
 <body>
   <main class="terminal-window">
     <header class="terminal-header">
-      <span class="dot red"></span>
-      <span class="dot yellow"></span>
-      <span class="dot green"></span>
-      <p class="terminal-title">portifolio@terminal: ~/Atividades/Estagio.html</p>
+      <div class="header-left">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <p class="terminal-title">portifolio@terminal: ~/atividades/estagio</p>
+      </div>
       <img class="terminal-logo" src="img/logo-unifil.svg" alt="Logo da UNIFIL" />
     </header>
 
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link" data-page="home">Home</a>
+      <a href="sobremim.html" class="nav-link" data-page="about">Sobre mim</a>
+      <a href="Atividades.html" class="nav-link" data-page="activities">Atividades</a>
+    </nav>
+
     <section class="terminal-body">
-        <p class="line"><span class="prompt">JuanTavares@portifolio:~$</span> open Estagio.md</p>
-        <h1>Estagio Supervisionado</h1>
+      <div class="command-line">
+        <p class="line"><span class="prompt">JuanTavares@portifolio:~$</span> <span class="command">cat estagio.md</span></p>
+      </div>
 
-        <h3>Gerenciador de Estoque</h3>
+      <h1>Estágio Supervisionado</h1>
+      <h2 style="font-size: 1.3rem; color: var(--info); font-weight: 500; margin-top: 16px;">Gerenciador de Estoque - Sistema Web de Automação</h2>
 
-        <p>Resumo</p>
+      <div style="background: rgba(88, 166, 255, 0.05); border-left: 3px solid var(--title); padding: 20px; border-radius: 6px; margin: 24px 0;">
+        <p style="margin: 0;"><strong>Período:</strong> 7º Semestre | <strong>Duração:</strong> 4 meses | <strong>Orientador:</strong> UniFil</p>
+      </div>
 
-        <p>O presente trabalho apresenta o desenvolvimento de um sistema web denominado Gerenciador de Estoque, criado com o objetivo de automatizar os processos de controle de produtos, vendas e fornecedores em pequenas e médias empresas. 
-            O sistema foi elaborado como parte do Estágio Curricular Supervisionado do curso de Ciência da Computação da UniFil e busca substituir o método manual de registro por uma solução digital eficiente e acessível. 
-            Utilizando as tecnologias PHP (Laravel 10) e MySQL 8.0, o sistema adota a arquitetura MVC e oferece módulos integrados para gestão de produtos, vendas, relatórios e fornecedores. 
-            A aplicação inclui controle de acesso por login, dashboards analíticos e relatórios financeiros, garantindo segurança e suporte à tomada de decisões. 
-            O desenvolvimento baseou-se em metodologias de Engenharia de Software e modelagem UML, resultando em uma solução escalável, de fácil manutenção e aderente à LGPD. 
-            O projeto demonstrou que a automação de processos é essencial para o aumento da eficiência operacional e a redução de erros em ambientes empresariais.
-        </p>
+      <h2>Visão Geral do Projeto</h2>
+      <p>
+        O presente trabalho apresenta o desenvolvimento de um <strong>sistema web denominado Gerenciador de Estoque</strong>, criado com o objetivo de automatizar os processos de controle de produtos, vendas e fornecedores em pequenas e médias empresas. O sistema foi desenvolvido como parte do Estágio Curricular Supervisionado do curso de Ciência da Computação da UniFil e busca substituir o método manual de registro por uma solução digital eficiente e acessível.
+      </p>
 
-        <p>Palavras-chave: gerenciamento de estoque; sistema web; automação; Laravel; MySQL.</p>
+      <h2>Stack Tecnológico</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PHP 8.0</span>
+            <span class="skill-tag">Laravel 10</span>
+            <span class="skill-tag">MySQL 8.0</span>
+            <span class="skill-tag">REST API</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Blade Templates</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Arquitetura</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MVC</span>
+            <span class="skill-tag">Design Patterns</span>
+            <span class="skill-tag">Migrations</span>
+            <span class="skill-tag">ORM Eloquent</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Metodologia</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">UML</span>
+            <span class="skill-tag">Eng. Software</span>
+            <span class="skill-tag">LGPD</span>
+            <span class="skill-tag">Agile</span>
+          </div>
+        </div>
+      </div>
 
-        
-        <nav class="terminal-nav">
-          <a href="index.html">Home</a>
-          <a href="sobremim.html">Sobre mim</a>
-          <a href="Atividades.html">Atividades</a>
-        
-        </nav>
+      <h2>Funcionalidades Principais</h2>
+      <div class="projects-grid">
+        <div class="project-card" style="background: linear-gradient(135deg, rgba(88, 166, 255, 0.05), rgba(63, 185, 80, 0.02));">
+          <div class="project-header">📦 Gestão de Produtos</div>
+          <p class="project-description">
+            Módulo completo para cadastro, atualização e exclusão de produtos com controle de estoque em tempo real, gestão de categorias e precificação dinâmica.
+          </p>
+        </div>
+        <div class="project-card" style="background: linear-gradient(135deg, rgba(88, 166, 255, 0.05), rgba(63, 185, 80, 0.02));">
+          <div class="project-header">💰 Gestão de Vendas</div>
+          <p class="project-description">
+            Sistema de ponto de venda com geração de recibos automáticos, rastreamento de transações, relatórios de vendas por período e análise de performance.
+          </p>
+        </div>
+        <div class="project-card" style="background: linear-gradient(135deg, rgba(88, 166, 255, 0.05), rgba(63, 185, 80, 0.02));">
+          <div class="project-header">🏪 Gestão de Fornecedores</div>
+          <p class="project-description">
+            Cadastro e gerenciamento de fornecedores, histórico de compras, integração com pedidos e análise de custos de fornecimento.
+          </p>
+        </div>
+        <div class="project-card" style="background: linear-gradient(135deg, rgba(88, 166, 255, 0.05), rgba(63, 185, 80, 0.02));">
+          <div class="project-header">📊 Painéis Analíticos</div>
+          <p class="project-description">
+            Dashboards customizáveis com KPIs, gráficos de vendas, análise de movimentação de estoque e indicadores financeiros em tempo real.
+          </p>
+        </div>
+        <div class="project-card" style="background: linear-gradient(135deg, rgba(88, 166, 255, 0.05), rgba(63, 185, 80, 0.02));">
+          <div class="project-header">🔐 Controle de Acesso</div>
+          <p class="project-description">
+            Sistema de autenticação robusto com permissões granulares, papéis de usuário (admin, gerente, operador) e auditoria de ações.
+          </p>
+        </div>
+        <div class="project-card" style="background: linear-gradient(135deg, rgba(88, 166, 255, 0.05), rgba(63, 185, 80, 0.02));">
+          <div class="project-header">📈 Relatórios Financeiros</div>
+          <p class="project-description">
+            Geração de relatórios detalhados de lucro/prejuízo, fluxo de caixa, análise de margens e exportação em múltiplos formatos.
+          </p>
+        </div>
+      </div>
+
+      <h2>Impacto and Resultados</h2>
+      <p>
+        O desenvolvimento baseou-se em metodologias de <strong>Engenharia de Software</strong> e <strong>modelagem UML</strong>, resultando em uma solução escalável, de fácil manutenção e aderente à LGPD. O projeto demonstrou que a <strong>automação de processos é essencial para o aumento da eficiência operacional</strong> e a redução de erros em ambientes empresariais.
+      </p>
+
+      <h2>Aprendizados e Competências</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Técnicas Avançadas</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li>✓ Desenvolvimento Full Stack</li>
+            <li>✓ Arquitetura MVC</li>
+            <li>✓ Banco de Dados Relacionais</li>
+            <li>✓ API RESTful</li>
+            <li>✓ Segurança Web</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Profissionais</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li>✓ Trabalho em Equipe</li>
+            <li>✓ Comunicação Técnica</li>
+            <li>✓ Gestão de Projetos</li>
+            <li>✓ Problem Solving</li>
+            <li>✓ Documentação</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Palavras-chave</h2>
+      <div class="skill-tags" style="margin-top: 12px;">
+        <span class="skill-tag">Laravel</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Sistema Web</span>
+        <span class="skill-tag">Gestão de Estoque</span>
+        <span class="skill-tag">Automação</span>
+        <span class="skill-tag">MVC</span>
+        <span class="skill-tag">LGPD</span>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border);">
+        <a href="Atividades.html" class="cta-button" style="display: inline-block;">← Voltar para Atividades</a>
+      </div>
+
+      <footer class="terminal-footer">
+        <p>@ 2024-2026 Juan Tavares.</p>
+      </footer>
     </section>
   </main>
+
+  <script>
+    document.querySelectorAll('[data-page]').forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === 'Atividades.html' || window.location.pathname.includes('Atividades')) {
+        link.classList.add('active');
+      }
+    });
+  </script>
 </body>
 </html>

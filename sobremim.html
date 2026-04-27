@@ -3,51 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio</title>
+  <title>Sobre Mim - Juan Tavares</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/jpeg" href="img/pngegg.png" />
 </head>
 <body>
   <main class="terminal-window">
     <header class="terminal-header">
-      <span class="dot red"></span>
-      <span class="dot yellow"></span>
-      <span class="dot green"></span>
-      <p class="terminal-title">portifolio@terminal: ~/Sobre_mim</p>
+      <div class="header-left">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <p class="terminal-title">portifolio@terminal: ~/sobre_mim</p>
+      </div>
       <img class="terminal-logo" src="img/logo-unifil.svg" alt="Logo da UNIFIL" />
     </header>
 
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link" data-page="home">Home</a>
+      <a href="sobremim.html" class="nav-link active" data-page="about">Sobre mim</a>
+      <a href="Atividades.html" class="nav-link" data-page="activities">Atividades</a>
+    </nav>
+
     <section class="terminal-body">
-      <p class="line"><span class="prompt">JuanTavares@portifolio:~$</span> open sobre_mim.md</p>
-      <h1>Sobre mim</h1>
+      <div class="command-line">
+        <p class="line"><span class="prompt">JuanTavares@portifolio:~$</span> <span class="command">whoami</span></p>
+      </div>
+      
+      <h1 style="margin: 20px 0 10px;">Sobre mim</h1>
+      <p style="font-size: 0.95rem; color: #8b949e;">Conhecendo a história por trás do código...</p>
 
       <div class="about-card">
         <img class="about-photo" src="img/foto.jpeg" alt="Foto de Juan Tavares" />
         <div class="about-text">
+          <h2>Juan Tavares</h2>
+          <p style="color: var(--accent); font-weight: 600;">Desenvolvedor | Estudante | Apaixonado por Tecnologia</p>
+          
           <p>
-            Sou Juan Tavares, estudante de Sistemas de Informação, apaixonado por tecnologia e
-            desenvolvimento de software. Gosto de transformar ideias em projetos práticos,
-            principalmente com foco em aplicações web e soluções que facilitem o dia a dia das
-            pessoas.
+            Sou Juan Tavares, estudante de <strong>Ciência da Computação na Universidade Filadélfia (UniFil)</strong>, apaixonado por tecnologia e desenvolvimento de software. Minha jornada na programação começou com a curiosidade de entender como as coisas funcionam, e isso evoluiu para uma paixão genuína por criar soluções inovadoras.
           </p>
+
+          <h3>Minha Trajetória</h3>
           <p>
-            Durante minha trajetória acadêmica, participei de atividades, estágio supervisionado e
-            desenvolvimento do TCC, experiências que fortaleceram minhas habilidades técnicas,
-            organização e trabalho em equipe. Estou sempre buscando aprender novas ferramentas e
-            evoluir como desenvolvedor.
+            Durante minha formação acadêmica, tive a oportunidade de trabalhar em diversos projetos e atividades que fortaleceram minhas habilidades técnicas:
+          </p>
+          <ul style="line-height: 1.8; list-style: none; padding: 0; margin: 12px 0 20px;">
+            <li style="padding-left: 24px; position: relative; margin-bottom: 8px;"><strong>Estágio Supervisionado:</strong> Desenvolvimento do Gerenciador de Estoque com Laravel e MySQL</li>
+            <li style="padding-left: 24px; position: relative; margin-bottom: 8px;"><strong>Trabalho de Conclusão de Curso (TCC):</strong> Pesquisa sobre Segurança em Código Gerado por LLMs</li>
+            <li style="padding-left: 24px; position: relative; margin-bottom: 8px;"><strong>Atividades Acadêmicas:</strong> Pensamento Computacional e Desenvolvimento de Competências Técnicas</li>
+          </ul>
+
+          <h3>O que me motiva</h3>
+          <p>
+            Gosto de transformar ideias complexas em projetos práticos que façam diferença real. Tenho interesse especial em:
+          </p>
+          <ul style="line-height: 1.8; list-style: none; padding: 0; margin: 12px 0 20px;">
+            <li style="padding-left: 24px; position: relative; margin-bottom: 8px;">Desenvolvimento Web Full Stack</li>
+            <li style="padding-left: 24px; position: relative; margin-bottom: 8px;">Segurança de Software e Boas Práticas</li>
+            <li style="padding-left: 24px; position: relative; margin-bottom: 8px;">Engenharia de Software e Arquitetura</li>
+            <li style="padding-left: 24px; position: relative; margin-bottom: 8px;">Inteligência Artificial e Machine Learning</li>
+          </ul>
+
+          <h3>Fora da programação</h3>
+          <p>
+            Sou alguém que valoriza aprendizado contínuo. Estou sempre explorando novas ferramentas, linguagens de programação e metodologias. Acredito que a melhor forma de crescer é compartilhando conhecimento e colaborando com outras pessoas.
           </p>
         </div>
       </div>
 
-      <p></p>
+      <section id="contato" class="contact-section" style="margin-top: 40px;">
+        <h2>Vamos nos conectar!</h2>
+        <p>Estou sempre aberto para conversas, parcerias e oportunidades de aprendizado.</p>
+        <div class="contact-methods">
+          <a href="mailto:juankstavares@hotmail.com" class="contact-btn primary">📧 Enviar Email</a>
+          <a href="https://www.linkedin.com/in/juan-tavares-link/" target="_blank" class="contact-btn secondary">💼 LinkedIn</a>
+          <a href="https://github.com/JuanksTavares" target="_blank" class="contact-btn secondary">🐙 GitHub</a>
+        </div>
+      </section>
 
-      <nav class="terminal-nav">
-        <a href="index.html">Home</a>
-        <a href="sobremim.html">Sobre mim</a>
-        <a href="Atividades.html">Atividades</a>
-        
-      </nav>
+      <footer class="terminal-footer">
+        <p>@ 2024-2026 Juan Tavares.</p>
+      </footer>
     </section>
   </main>
+
+  <script>
+    // Indicador de página ativa
+    document.querySelectorAll('[data-page]').forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === 'sobremim.html' || window.location.pathname.includes('sobremim')) {
+        link.classList.add('active');
+      }
+    });
+  </script>
 </body>
 </html>

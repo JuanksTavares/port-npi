@@ -3,31 +3,344 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio</title>
+  <title>Pensamento Computacional - Juan Tavares</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/jpeg" href="img/pngegg.png" />
 </head>
 <body>
   <main class="terminal-window">
     <header class="terminal-header">
-      <span class="dot red"></span>
-      <span class="dot yellow"></span>
-      <span class="dot green"></span>
-      <p class="terminal-title">portifolio@terminal: ~/pensamento</p>
+      <div class="header-left">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <p class="terminal-title">portifolio@terminal: ~/atividades/pensamento</p>
+      </div>
       <img class="terminal-logo" src="img/logo-unifil.svg" alt="Logo da UNIFIL" />
     </header>
 
-    <section class="terminal-body">
-      <p class="line"><span class="prompt">JuanTavares@portifolio:~$</span> open pensamento_computacional.md</p>
-      <h1>Pensamento Computacional</h1>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link" data-page="home">Home</a>
+      <a href="sobremim.html" class="nav-link" data-page="about">Sobre mim</a>
+      <a href="Atividades.html" class="nav-link" data-page="activities">Atividades</a>
+    </nav>
 
-      <nav class="terminal-nav">
-        <a href="index.html">Home</a>
-        <a href="sobremim.html">Sobre mim</a>
-        <a href="Atividades.html">Atividades</a>
+    <section class="terminal-body pensamento-background">
+      <div class="command-line">
+        <p class="line"><span class="prompt">JuanTavares@portifolio:~$</span> <span class="command">cat pensamento_computacional.md</span></p>
+      </div>
+
+      <h1>Pensamento Computacional</h1>
+      <h2 style="font-size: 1.2rem; color: var(--info); font-weight: 500; margin-top: 12px; margin-bottom: 24px;">Projeto de Monitoria - Aulas de Computação para Ensino Fundamental e Médio</h2>
+      
+      <div style="background: rgba(88, 166, 255, 0.05); border-left: 3px solid var(--title); padding: 20px; border-radius: 6px; margin: 24px 0;">
+        <p style="margin: 0;"><strong>Projeto:</strong> Pensamento Computacional | <strong>Papel:</strong> Monitor | <strong>Público Alvo:</strong> Ensino Fundamental e Médio</p>
+      </div>
+
+      <h2>Sobre o Projeto</h2>
+      <p>
+        Este é um projeto de monitoria onde trabalho auxiliando alunos durante aulas de Pensamento Computacional. O objetivo é introduzir conceitos fundamentais de ciência da computação de forma lúdica e prática para crianças e adolescentes, desenvolvendo habilidades de lógica, resolução de problemas e pensamento estruturado.
+      </p>
+      <p>
+        Como monitor, meu papel é:
+      </p>
+      <ul style="list-style: none; padding: 0; margin: 12px 0 20px;">
+        <li style="padding-left: 24px; position: relative; margin-bottom: 12px;">Auxiliar os alunos na compreensão dos conceitos</li>
+        <li style="padding-left: 24px; position: relative; margin-bottom: 12px;">Ajudar na resolução de problemas e desafios</li>
+        <li style="padding-left: 24px; position: relative; margin-bottom: 12px;">Documentar as aulas e evoluções dos alunos</li>
+        <li style="padding-left: 24px; position: relative; margin-bottom: 12px;">Propor atividades práticas e dinâmicas</li>
+      </ul>
+
+      <h2>Conteúdos Abordados</h2>
+
+      <h2>Tópicos Principais</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Fundamentos</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li>✓ Decomposição de Problemas</li>
+            <li>✓ Reconhecimento de Padrões</li>
+            <li>✓ Abstração</li>
+            <li>✓ Algoritmos</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Estruturas de Dados</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li>✓ Arrays e Listas</li>
+            <li>✓ Pilhas e Filas</li>
+            <li>✓ Grafos</li>
+            <li>✓ Árvores</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Algoritmos Clássicos</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li>✓ Busca Linear e Binária</li>
+            <li>✓ Ordenação (Bubble, Quick)</li>
+            <li>✓ Programação Dinâmica</li>
+            <li>✓ Recursão</li>
+          </ul>
+        </div>
         
-      </nav>
+      </div>
+
+      <p></p>
+
+      <h2>Competências Adquiridas</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Técnicas</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Lógica Programação</span>
+            <span class="skill-tag">Pseudocódigo</span>
+            <span class="skill-tag">Fluxogramas</span>
+            <span class="skill-tag">Análise Algoritmos</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Conceituais</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Pensamento Crítico</span>
+            <span class="skill-tag">Resolução Problemas</span>
+            <span class="skill-tag">Pensamento Estruturado</span>
+            <span class="skill-tag">Otimização</span>
+          </div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <h2>📋 Monitorias e Relatórios de Aula</h2>
+      <p style="color: #8b949e; margin-bottom: 24px;">Fotos e relatórios das aulas que monitoro:</p>
+
+      <div class="monitorias-container">
+        <!-- Template para novas aulas - copie e modifique -->
+        <!-- 
+        <div class="aula-card">
+          <div class="aula-header">
+            <h3>Aula X - Título do Conteúdo</h3>
+            <span class="aula-data">Data: XX/XX/XXXX</span>
+          </div>
+          <div class="aula-content">
+            <div class="aula-foto-container">
+              <img src="img/foto-aula-X.jpg" alt="Foto da Aula X" class="aula-foto" />
+            </div>
+            
+            <div class="aula-relatorio">
+              <h4>📝 Relatório da Aula</h4>
+              
+              <p><strong>Tópicos abordados:</strong></p>
+              <ul style="list-style: none; padding: 0; margin: 12px 0;">
+                <li style="padding-left: 20px; position: relative; margin-bottom: 8px;">Conceito 1</li>
+                <li style="padding-left: 20px; position: relative; margin-bottom: 8px;">Conceito 2</li>
+              </ul>
+              
+              <p><strong>Atividades realizadas:</strong></p>
+              <p>Descrição das atividades práticas...</p>
+              
+              <p><strong>Principais aprendizados dos alunos:</strong></p>
+              <ul style="list-style: none; padding: 0; margin: 12px 0;">
+                <li style="padding-left: 20px; position: relative; margin-bottom: 8px;">Aprendizado 1</li>
+                <li style="padding-left: 20px; position: relative; margin-bottom: 8px;">Aprendizado 2</li>
+              </ul>
+              
+              <p><strong>Observações da monitoria:</strong></p>
+              <p>Anotações sobre dificuldades encontradas, evolução dos alunos, ajustes necessários, etc...</p>
+            </div>
+          </div>
+        </div>
+        -->
+        <div class="aula-card">
+          <div class="aula-header">
+            <h3>Aula X - Título do Conteúdo</h3>
+            <span class="aula-data">Data: XX/XX/XXXX</span>
+          </div>
+          <div class="aula-content">
+            <div class="aula-foto-container">
+              <img src="img/foto-aula-X.jpg" alt="Foto da Aula X" class="aula-foto" />
+            </div>
+            
+            <div class="aula-relatorio">
+              <h4>📝 Relatório da Aula</h4>
+              
+              <p><strong>Tópicos abordados:</strong></p>
+              <ul style="list-style: none; padding: 0; margin: 12px 0;">
+                <li style="padding-left: 20px; position: relative; margin-bottom: 8px;">Conceito 1</li>
+                <li style="padding-left: 20px; position: relative; margin-bottom: 8px;">Conceito 2</li>
+              </ul>
+              
+              <p><strong>Atividades realizadas:</strong></p>
+              <p>Descrição das atividades práticas...</p>
+              
+              <p><strong>Principais aprendizados dos alunos:</strong></p>
+              <ul style="list-style: none; padding: 0; margin: 12px 0;">
+                <li style="padding-left: 20px; position: relative; margin-bottom: 8px;">Aprendizado 1</li>
+                <li style="padding-left: 20px; position: relative; margin-bottom: 8px;">Aprendizado 2</li>
+              </ul>
+              
+              <p><strong>Observações da monitoria:</strong></p>
+              <p>Anotações sobre dificuldades encontradas, evolução dos alunos, ajustes necessários, etc...</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: rgba(88, 166, 255, 0.1); border: 2px dashed var(--accent); padding: 32px; border-radius: 10px; text-align: center; color: #8b949e;">
+          <p style="font-size: 3rem; margin: 0;">📸</p>
+          <p style="margin: 12px 0 0; font-size: 1rem;">Nenhuma aula registrada ainda</p>
+          <p style="margin: 8px 0 0; font-size: 0.9rem;">Aulas com fotos e relatórios aparecerão aqui</p>
+        </div>
+      </div>
+
+      <style>
+        .pensamento-background {
+          background-image: linear-gradient(rgba(13, 17, 23, 0.85), rgba(13, 17, 23, 0.85)), url('img/bg-pensamento.jpg');
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+        }
+
+        .monitorias-container {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          margin-bottom: 40px;
+        }
+
+        .aula-card {
+          background: var(--panel);
+          border: 1px solid var(--border);
+          border-radius: 12px;
+          overflow: hidden;
+          transition: all 0.3s ease;
+        }
+
+        .aula-card:hover {
+          border-color: var(--accent);
+          transform: translateY(-3px);
+          box-shadow: 0 12px 30px rgba(63, 185, 80, 0.15);
+        }
+
+        .aula-header {
+          background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(63, 185, 80, 0.05));
+          padding: 16px 20px;
+          border-bottom: 1px solid var(--border);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+
+        .aula-header h3 {
+          margin: 0;
+          color: var(--title);
+          font-size: 1.2rem;
+        }
+
+        .aula-data {
+          background: rgba(63, 185, 80, 0.2);
+          color: var(--accent);
+          padding: 6px 14px;
+          border-radius: 20px;
+          font-size: 0.85rem;
+          font-weight: 600;
+        }
+
+        .aula-content {
+          padding: 0;
+        }
+
+        .aula-foto-container {
+          width: 100%;
+          max-height: 400px;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgba(0, 0, 0, 0.2);
+        }
+
+        .aula-foto {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          max-height: 400px;
+        }
+
+        .aula-relatorio {
+          padding: 24px;
+        }
+
+        .aula-relatorio h4 {
+          margin: 0 0 12px;
+          color: var(--accent);
+          font-size: 1.1rem;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .aula-relatorio p {
+          margin: 12px 0;
+          line-height: 1.7;
+          color: var(--text);
+        }
+
+        .aula-relatorio p strong {
+          color: var(--title);
+        }
+
+        .aula-relatorio ul li {
+          color: var(--text);
+        }
+
+        .aula-relatorio ul li:before {
+          content: "▸";
+          color: var(--accent);
+          position: absolute;
+          left: 0;
+          font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+          .aula-header {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          .aula-header h3 {
+            font-size: 1rem;
+          }
+
+          .aula-relatorio {
+            padding: 16px;
+          }
+        }
+      </style>
+
+      <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border);">
+        <a href="Atividades.html" class="cta-button" style="display: inline-block;">← Voltar para Atividades</a>
+      </div>
+
+      <footer class="terminal-footer">
+        <p>@ 2024-2026 Juan Tavares.</p>
+      </footer>
     </section>
   </main>
+
+  <script>
+    document.querySelectorAll('[data-page]').forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === 'Atividades.html' || window.location.pathname.includes('Atividades')) {
+        link.classList.add('active');
+      }
+    });
+  </script>
 </body>
 </html>

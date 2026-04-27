@@ -3,60 +3,196 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio</title>
+  <title>Juan Tavares - Portfólio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/jpeg" href="img/pngegg.png" />
 </head>
 <body>
   <main class="terminal-window">
     <header class="terminal-header">
-      <span class="dot red"></span>
-      <span class="dot yellow"></span>
-      <span class="dot green"></span>
-      <p class="terminal-title">portifolio@terminal: ~</p>
+      <div class="header-left">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <p class="terminal-title">portifolio@terminal: ~</p>
+      </div>
       <img class="terminal-logo" src="img/logo-unifil.svg" alt="Logo da UNIFIL" />
     </header>
 
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link active" data-page="home">Home</a>
+      <a href="sobremim.html" class="nav-link" data-page="about">Sobre mim</a>
+      <a href="Atividades.html" class="nav-link" data-page="activities">Atividades</a>
+    </nav>
+
+    <nav class="main-nav">
+      <a href="#habilidades" class="nav-link">Habilidades</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+
     <section class="terminal-body">
-        <p class="line"><span class="prompt">JuanTavares@portifolio:~$</span> cat home.txt</p>
-        <h1>Portifolio</h1>
+      <div class="command-line">
+        <p class="line"><span class="prompt">JuanTavares@portifolio:~$</span> <span class="command">cat welcome.txt</span></p>
+      </div>
 
-        <p>Olá! Me chamo Juan, Sou estudante de Ciência da Computação na Universidade Filadélfia.</p>
+      <!-- Seção Hero -->
+      <section class="hero-section">
+        <h1 class="title-main">Juan Tavares</h1>
+        <p class="subtitle">Desenvolvedor | Estudante de Ciência da Computação | Apaixonado por Tecnologia</p>
+        <p class="description">
+          Bem-vindo! Aqui você encontra minha jornada na tecnologia: projetos acadêmicos, desafios conquistados e habilidades que venho desenvolvendo. 
+          Estou sempre buscando aprender e criar soluções inovadoras.
+        </p>
+        <a href="#contato" class="cta-button">Vamos conversar →</a>
+      </section>
 
-        <p>Aqui você vai encontrar um pouco da minha jornada no universo da tecnologia: projetos acadêmicos, desafios que encarei e as habilidades que venho desenvolvendo ao longo do caminho.</p>
+      <!-- Destaques Rápidos -->
+      <section class="quick-stats">
+        <div class="stat-card">
+          <span class="stat-icon">📚</span>
+          <h3>Formação</h3>
+          <p>Ciência da Computação<br/>UniFil</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">💻</span>
+          <h3>Stack</h3>
+          <p>Full Stack<br/>PHP · JavaScript · Python</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">🏆</span>
+          <h3>Experiência</h3>
+          <p>Estágio · TCC<br/>Desenvolvimento Web</p>
+        </div>
+      </section>
 
-        <h2>Redes Sociais</h2>
+      <!-- Habilidades -->
+      <section id="habilidades" class="skills-section">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Responsivo</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">REST API</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Ferramentas</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Docker</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Outras</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">UML</span>
+              <span class="skill-tag">Agile</span>
+              <span class="skill-tag">LGPD</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <div class="social-links">
-          <a href="https://github.com/JuanksTavares" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 0.5C5.65 0.5 0.5 5.66 0.5 12.03C0.5 17.13 3.8 21.45 8.38 22.98C8.95 23.09 9.16 22.74 9.16 22.44C9.16 22.17 9.15 21.29 9.14 20.35C5.98 21.04 5.31 18.99 5.31 18.99C4.79 17.66 4.04 17.31 4.04 17.31C3 16.6 4.12 16.61 4.12 16.61C5.27 16.69 5.88 17.8 5.88 17.8C6.9 19.55 8.56 19.05 9.22 18.76C9.33 18.02 9.61 17.52 9.92 17.23C7.39 16.94 4.73 15.96 4.73 11.59C4.73 10.35 5.17 9.34 5.9 8.55C5.79 8.26 5.4 7.08 6.01 5.48C6.01 5.48 6.98 5.17 9.15 6.63C10.08 6.37 11.08 6.24 12.08 6.24C13.08 6.24 14.08 6.37 15.01 6.63C17.18 5.17 18.15 5.48 18.15 5.48C18.76 7.08 18.37 8.26 18.26 8.55C18.99 9.34 19.43 10.35 19.43 11.59C19.43 15.97 16.76 16.93 14.23 17.22C14.63 17.56 14.99 18.24 14.99 19.3C14.99 20.82 14.97 22.04 14.97 22.44C14.97 22.75 15.18 23.1 15.76 22.98C20.34 21.45 23.64 17.13 23.64 12.03C23.64 5.66 18.49 0.5 12.12 0.5H12Z"/>
+      <!-- Projetos em Destaque -->
+      <section class="projects-section">
+        <h2>Projetos em Destaque</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">Gerenciador de Estoque</div>
+            <p class="project-description">
+              Sistema web completo para automação de controle de produtos, vendas e fornecedores. Desenvolvido com Laravel 10 e MySQL.
+            </p>
+            <div class="project-tags">
+              <span>Laravel</span>
+              <span>MySQL</span>
+              <span>MVC</span>
+            </div>
+            <a href="Estagio.html" class="project-link">Saiba mais →</a>
+          </div>
+          <div class="project-card">
+            <div class="project-header">TCC: Segurança em LLMs</div>
+            <p class="project-description">
+              Revisão bibliográfica sobre vulnerabilidades de segurança em código gerado por Grandes Modelos de Linguagem.
+            </p>
+            <div class="project-tags">
+              <span>Pesquisa</span>
+              <span>Segurança</span>
+              <span>IA</span>
+            </div>
+            <a href="TCC.html" class="project-link">Leia o artigo →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Redes Sociais -->
+      <section class="social-section">
+        <h2>Conecte-se comigo</h2>
+        <div class="social-links-large">
+          <a href="https://github.com/JuanksTavares" target="_blank" rel="noopener noreferrer" class="social-card">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 0.5C5.65 0.5 0.5 5.66 0.5 12.03C0.5 17.13 3.8 21.45 8.38 22.98C8.95 23.09 9.16 22.74 9.16 22.44C9.16 22.17 9.15 21.29 9.14 20.35C5.98 21.04 5.31 18.99 5.31 18.99C4.79 17.66 4.04 17.31 4.04 17.31C3 16.6 4.12 16.61 4.12 16.61C5.27 16.69 5.88 17.8 5.88 17.8C6.9 19.55 8.56 19.05 9.22 18.76C9.33 18.02 9.61 17.52 9.92 17.23C7.39 16.94 4.73 15.96 4.73 11.59C4.73 10.35 5.17 9.34 5.9 8.55C5.79 8.26 5.4 7.08 6.01 5.48C6.01 5.48 6.98 5.17 9.15 6.63C10.08 6.37 11.08 6.24 12.08 6.24C13.08 6.24 14.08 6.37 15.01 6.63C17.18 5.17 18.15 5.48 18.15 5.48C18.76 7.08 18.37 8.26 18.26 8.55C18.99 9.34 19.43 10.35 19.43 11.59C19.43 15.97 16.76 16.93 14.23 17.22C14.63 17.56 14.99 18.24 14.99 19.3C14.99 20.82 14.97 22.04 14.97 22.44C14.97 22.75 15.18 23.1 15.76 22.98C20.34 21.45 23.64 17.13 23.64 12.03C23.64 5.66 18.49 0.5 12.12 0.5Z"/>
             </svg>
+            <span>GitHub</span>
           </a>
-
-          <a href="https://www.linkedin.com/in/juan-tavares-link/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
+          <a href="https://www.linkedin.com/in/juan-tavares-link/" target="_blank" rel="noopener noreferrer" class="social-card">
+            <svg viewBox="0 0 24 24">
               <path d="M20.45 20.45H16.89V14.88C16.89 13.55 16.86 11.84 15.03 11.84C13.17 11.84 12.89 13.29 12.89 14.79V20.45H9.33V9H12.75V10.56H12.8C13.28 9.66 14.45 8.72 16.18 8.72C19.78 8.72 20.45 11.09 20.45 14.18V20.45ZM5.31 7.43C4.17 7.43 3.25 6.51 3.25 5.37C3.25 4.23 4.17 3.31 5.31 3.31C6.45 3.31 7.37 4.23 7.37 5.37C7.37 6.5 6.45 7.43 5.31 7.43ZM7.09 20.45H3.52V9H7.09V20.45ZM22.22 0H1.78C0.8 0 0 0.77 0 1.72V22.28C0 23.23 0.8 24 1.78 24H22.22C23.2 24 24 23.23 24 22.28V1.72C24 0.77 23.2 0 22.22 0Z"/>
             </svg>
+            <span>LinkedIn</span>
           </a>
-
-          <a href="mailto:juankstavares@hotmail.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
+          <a href="mailto:juankstavares@hotmail.com" class="social-card">
+            <svg viewBox="0 0 24 24">
               <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
             </svg>
+            <span>Email</span>
           </a>
         </div>
-    
-      <nav class="terminal-nav">
-        <a href="index.html">Home</a>
-        <a href="sobremim.html">Sobre mim</a>
-        <a href="Atividades.html">Atividades</a>
-        
-      </nav>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="contact-section">
+        <h2>Vamos trabalhar juntos!</h2>
+        <p>Estou aberto a novas oportunidades, desafios e conversas sobre tecnologia.</p>
+        <div class="contact-methods">
+          <a href="mailto:juankstavares@hotmail.com" class="contact-btn primary">📧 Enviar Email</a>
+          <a href="https://www.linkedin.com/in/juan-tavares-link/" target="_blank" class="contact-btn secondary">💼 LinkedIn</a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="terminal-footer">
+        <p>@ 2024-2026 Juan Tavares.</p>
+      </footer>
     </section>
   </main>
+
+  <script>
+    // Indicador de página ativa
+    document.querySelectorAll('[data-page]').forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === 'index.html' || window.location.pathname.includes('index')) {
+        link.classList.add('active');
+      }
+    });
+  </script>
 </body>
 </html>
