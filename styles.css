@@ -9,6 +9,19 @@
   --warning: #ffa657;
   --error: #ff7b72;
   --info: #79c0ff;
+
+  /*
+  --bg: #0d1117;
+  --panel: #161b22;
+  --text: #c9d1d9;
+  --title: #58a6ff;
+  --accent: #3fb950;
+  --border: #30363d;
+  --success: #3fb950;
+  --warning: #ffa657;
+  --error: #ff7b72;
+  --info: #79c0ff;
+  */
 }
 
 * {
@@ -20,11 +33,15 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Fira Code", "Cascadia Code", monospace;
-  background: var(--bg);
   color: var(--text);
   display: grid;
   place-items: center;
   padding: 24px;
+  background-image: url("img/dramatic-scenery-3840x2160-20802.jpg");
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .terminal-window {
@@ -309,10 +326,14 @@ p {
 .hero-section {
   margin: 40px 0;
   padding: 40px;
-  background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(63, 185, 80, 0.05));
+  /*background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(63, 185, 80, 0.05));*/
   border: 1px solid var(--border);
   border-radius: 12px;
   text-align: center;
+  background-image: url("img/fundo-onda.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title-main {
@@ -611,11 +632,16 @@ p {
 .contact-section {
   margin: 40px 0;
   padding: 40px;
-  background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(63, 185, 80, 0.1));
+  /*background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(63, 185, 80, 0.1));*/
   border: 2px solid var(--border);
   border-radius: 12px;
   text-align: center;
+  background-image: url("img/fundo-onda.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 .contact-section h2 {
   margin-top: 0;
